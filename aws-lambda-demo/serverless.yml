@@ -1,0 +1,17 @@
+service: aws-lambda-demo
+
+provider:
+  name: aws
+  runtime: provided.al2023
+  region: eu-central-1
+
+package:
+  artifact: target/app.zip
+
+functions:
+  hello:
+    handler: notImportant # For a custom runtime, this field is not used
+    events:
+      - http:
+          path: hello
+          method: get
