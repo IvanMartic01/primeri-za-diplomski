@@ -1,0 +1,37 @@
+{
+	"info": {
+		"_postman_id": "abf16f1e-1f72-4f53-930b-23d14df7bde8",
+		"name": "aws",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "24996958"
+	},
+	"item": [
+		{
+			"name": "get subscribes",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "spring.cloud.function.definition",
+						"value": "findAll",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "\"ivanmartic311@gmail.com\"",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://mphiko34ej3hb4pkqln5ywqy6i0nukgo.lambda-url.eu-central-1.on.aws/"
+			},
+			"response": []
+		}
+	]
+}
